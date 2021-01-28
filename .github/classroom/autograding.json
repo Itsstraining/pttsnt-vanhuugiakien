@@ -1,0 +1,84 @@
+{
+  "tests": [
+    {
+      "name": "Test 01",
+      "setup": "",
+      "run": "node init",
+      "input": "0",
+      "output": "0",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Test 02",
+      "setup": "",
+      "run": "node init",
+      "input": "21",
+      "output": "3 7",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Test 03",
+      "setup": "",
+      "run": "node init",
+      "input": "35",
+      "output": "5 7",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Test 04",
+      "setup": "",
+      "run": "node init",
+      "input": "100",
+      "output": "2 2 5 5",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Test 05",
+      "setup": "",
+      "run": "node init",
+      "input": "123",
+      "output": "3 41",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Test 06",
+      "setup": "",
+      "run": "node init",
+      "input": "900",
+      "output": "2 2 3 3 5 5",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Test 07",
+      "setup": "",
+      "run": "node init",
+      "input": "1024",
+      "output": "2 2 2 2 2 2 2 2 2 2",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "Test 08",
+      "setup": "",
+      "run": "node init",
+      "input": "23031998",
+      "output": "2 11 53 19753",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 20
+    }
+  ]
+}
