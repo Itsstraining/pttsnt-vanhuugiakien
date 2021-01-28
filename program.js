@@ -64,26 +64,29 @@ function convertSuper(n) {
     res.push(n);
     return res;
   } else {
-    for (let i = 0; i < n + 1; i++) {
-      if (checkSNT(i)) {
-        if (n % i == 0) {
-          if (n == i) {
-            res.push(i);
-            return res
-          } else {
-            res.push(i);
-            n = n / i;
-            convertSuper(n)
+    for (let i = 1; i < n + 1; i++) {
+      if (n == i + 1) {
+        res.push(i + 1);
+        return res
+      } else {
+        if (checkSNT(i)) {
+          if (n % i == 0) {
+            if (n != i) {
+              res.push(i);
+              n = n / i;
+              convertSuper(n)
+            }
+            return res;
           }
         }
       }
     }
-    return res;
+    res.push(i);
 
   }
 
 }
-console.log(convertSuper(12345))
+// console.log(convertSuper(100))
 function main(input) {
   input = parseInt(input)
   let a = convertSuper(input).join(" ");
